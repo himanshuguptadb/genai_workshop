@@ -137,7 +137,7 @@
 # DBTITLE 1,Create function that retrieves order history based on userID
 # MAGIC %sql
 # MAGIC CREATE OR REPLACE FUNCTION get_order_history(cust_name STRING)
-# MAGIC RETURNS TABLE (returns_last_12_months INT, issue_category STRING, todays_date DATE)
+# MAGIC RETURNS TABLE (issues_last_12_months INT, issue_category STRING, todays_date DATE)
 # MAGIC COMMENT 'This takes the customer name as an input and returns the number of issues and the issue category'
 # MAGIC LANGUAGE SQL
 # MAGIC RETURN 
